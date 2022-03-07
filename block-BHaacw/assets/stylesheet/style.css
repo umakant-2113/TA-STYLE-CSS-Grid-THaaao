@@ -1,0 +1,172 @@
+@import url(./general.css);
+@import url(./reset.css);
+body {
+  background-color: #3a4a4f;
+}
+
+.full-width {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fafafa;
+  margin: 1rem 0;
+}
+
+#toggle {
+  display: none;
+}
+
+.nav-bar {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  padding: 1rem 2rem;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  border: 2px solid #6dc1db;
+}
+
+.nav-bar a {
+  color: #6dc1db;
+}
+
+.article-box {
+  height: 75vh;
+  width: 100vw;
+  margin: 1rem auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.item3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1/4;
+}
+
+.item2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+figure {
+  text-align: center;
+}
+
+.graph {
+  height: 100px;
+  width: 150px;
+  margin-bottom: 5rem;
+}
+
+.cat {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+.article-item {
+  background-color: white;
+  border-top: 3px solid #0095be;
+}
+
+.article-item5 {
+  background-color: white;
+}
+
+h2 {
+  color: #4c5b5e;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: .5rem;
+}
+
+.item5-h2 {
+  background-color: #0095be;
+  color: white;
+  margin: 0;
+}
+
+p {
+  color: #4c5b5e;
+  width: 89%;
+  line-height: 1.3;
+  padding: .5rem;
+  margin-bottom: 3rem;
+}
+
+a {
+  color: crimson;
+  font-size: 1.01rem;
+  font-weight: 400;
+}
+
+.item4-a {
+  background-color: #fc2e1b;
+  width: 100%;
+  padding: .7rem .5rem;
+}
+
+.item4-a a {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .sm-container {
+    max-width: 768;
+    margin: 0 auto;
+  }
+  html {
+    font: 12px;
+  }
+  .sm-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sm-flex-50 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+  .sm-navbar {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mn-container {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  .mn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .mn-flex-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .mn-full-width {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
